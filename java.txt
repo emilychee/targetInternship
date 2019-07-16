@@ -1,0 +1,94 @@
+# Java #
+
+# What is Java?
+- It’s a programming language & a runtime environment
+
+# JRE (runtime environment) vs JDK (developer kit)
+- JRE
+    - Required to run apps
+    - End-users require a JRE
+- JDK
+    - Tools to create Java apps
+    - Developers use JDK
+    - JDK includes JRE
+
+# Packages
+- Provide organization
+- Follow naming standards 
+    - all lowercase
+    - Use reversed domain name
+    - Then add further names for uniqueness
+- Affect source code file structure
+- Most IDEs require sub-folder for each part of the package name
+
+# Variables
+- Strongly typed: must specify type of the variable (like C++)
+- Naming: only use letters and numbers; use camel case
+
+# Primitive Types
+- Integer: need ‘L’ next to longs
+- Floats: need ‘f’ next to floats and ‘d’ next to double
+- Character: use single quotes
+- Boolean: called boolean not bool
+
+# arithmetic operations resolved in PEMDAS order
+
+# Type conversions
+- Use (type) in front of variable
+- Will cast to whatever the largest type is
+- Narrowing type conversions can cause problems so be cautious
+- For narrowing conversions, must explicitly cast variables
+
+# Ternary Operator
+result = condition ? true-value: false-value;
+
+# Logical Operators
+- And: &&
+- Or: | |
+- Exclusive or: ^
+- Not: !
+
+# Do-While Loop
+- Condition checked at the end of the loop
+do {
+// loop statements
+} while (condition);
+
+# Declaring Arrays
+int[] array = new int[size];
+
+# Classes
+- Each instance is a reference to an object
+- Assignment only makes shallow copy, not a deep copy
+- “null” represents an uncreated object
+
+# Class Initializers
+- Use field initializers when you can
+- Use constructors when your private variables depend on user input
+- Chaining constructors: when one constructor calls another constructor
+this(/*parameters here*/)
+    - Must be first line in that constructor
+- Initialization blocks: blocks of code to initialize the class
+    - Best to use when you want to share this piece of code across many other constructors because the initialization block automatically runs similar to the field initializers
+- Class initialization order
+    - Field initialization first (lowest priority)
+    - Initialization block second
+    - Constructor last (highest priority; overwrites other initializers)
+
+# Variable Number of Parameters
+- Put eclipses on that parameter
+- This must be the last parameter in the list
+
+# Class Inheritance
+- Fields from derived hide the base class fields with the same name
+- Methods from derived class override methods from base class with same signature
+- Super treats objects as if they’re an instance of the base class
+    - Useful when wanting to access base class members that have been overridden
+- Final prevents inheriting the whole class and prevents overriding of methods
+    - Put it in the base class declaration so that no one can inherit it
+    - When adding it to a method in the base class, this means you can’t override that method in the derived class
+- Abstract requires inheriting or overriding
+    - For methods, only provide signature
+    - If you have an abstract method, the class must be marked as abstract
+- Constructors aren’t inherited
+    - Must call into a base class constructor
