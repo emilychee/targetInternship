@@ -1,0 +1,84 @@
+# Spring #
+
+# What is Spring?
+- Usually refers to a group of spring projects (spring ecosystem)
+- consists of Spring Framework and Spring Projects built on top of the spring framework —> Spring Boot + Spring Cloud
+- Started as an alternative to JavaEE
+
+# Why use Spring?
+- It makes it easy to create Java applications
+- Large community (so easy to find stack overflow answers)
+
+# What is Spring Boot?
+- It’s a specific spring project
+- Supposed to make getting started with spring quick and easy for developers
+- Can be used to build all sorts of applications in spring (both web and non-web)
+- Notable features
+    - Auto-configuration: sets up application automatically for you
+    - Standalone: don’t need to deploy application into web server 
+    - Opinionated: has a chosen way of doing things by default
+- Process for running Java applications
+    - Package application (like zipping up all the files)
+    - Choose web server to run your application on
+    - Configure (set up) the web server
+    - Deploy application and start web server
+- With spring boot, you don’t have to do any of the above steps
+    - Just package the application
+    - Run the application
+- Visit start.spring.io to find more out
+
+# Understanding the Spring Framework
+- Uses asynchronous programming
+- 6 areas of the spring framework
+    - Core: Spring core serves as foundation on which all other modules are built; dependency injection
+    - Web: framework for handling web requests; can be handled using Spring MVC or Spring Webflux
+    - AOP: aspect-oriented programming
+    - Data access
+    - Integration
+    - Testing
+- Spring MVC: uses a servlet API
+    - Web request —> server —> servlet API —> spring web MVC —> business logic
+- Spring Webflux: a way of handling web requests
+    - Handles requests asynchronously
+    - This means better resource utilization
+- Spring AOP: increase organization of your application by separating the different layers of your app
+    - Used to implement certain features in the spring framework
+    - A good tool for developers to handle problems that are connected to multiple layers
+- Spring Data Access
+    - will notice that there’s a lot of code required just to use the java database API and relatively little code actually related to the database queries
+    - Spring reduces the boiler plate code to a single statement!
+    - Also makes testing data easier
+- Spring Integration (because applications often need to share data with other applications)
+    - Makes different systems and applications work together
+    - Ways to expose operations to other systems:
+        - Remote method invocation
+        - Messaging system
+        - Web services: operations that are accessible on the web
+    - RestTemplate abstracts away details of using a service
+        - It connects to the web service
+        - Sends the command
+        - Handles the response
+- Spring Testing: focuses on unit and integration testing
+    - Integration testing: when software modules are tested as a group
+    - Spring injects dependencies and puts everything together
+    - Spring also “cleans up” after tests
+
+# Random Notes
+- Distributed system: many different applications all linked together by a network
+    - Popular example is micro-services architecture
+
+# When to Use Spring
+- Advantages
+    - Well engineered
+    - Stood the “test of time”
+    - Big community, easy to find answers
+    - Actively developed (and open source)
+    - Built-in IDE support
+    - Scalable
+- Disadvantages
+    - Too much “magic”
+    - Steep learning curve
+    - Can increase size of final deliverable
+    - Hard to debug :(
+    - Adds additional memory overhead
+    - Growing complexity

@@ -1,0 +1,89 @@
+# Angular JS #
+
+# Overview # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+# Boiler plate code
+- Must include script tag pointing to JS file in the HTML file (put in head)
+- Must put “ng-app” attribute somewhere in the HTML that shows which area is controlled by the AngularJS (usually add it to top html element)
+
+# JavaScript Patterns
+- Functions used as abstractions, to build modules, and to avoid globals
+- Functions as abstractions is very similar to the idea of decorators in python
+- Good practice is to wrap everything in a “program” function and have function invoke itself —> IIFE (immediately invoked function)
+
+
+# Controllers # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Basics
+- Controller directive = ng-controller
+    - Takes control over a certain area of HTML code
+- Controller is a function that Angular invokes
+    - Takes $scope parameter
+
+# HTTP service
+- Can use $http in controller for http communication
+- Returns a promise!!
+- Use .then() to make sure you only try to use the data being fetched after it has been retrieved
+
+# Modules
+- Collection of services (class with well-defined purpose), directives, controllers, and other related information
+var app = angular.module(“plunker”, []);
+
+# Creating a module
+angular.module(“plunker”, []).controller(‘MainCtrl’, function($scope) {
+    // statements
+});
+
+
+# Directives and View # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# directive
+- All of the following ng-* are Called directives
+- Directives change the behavior or appearance of DOM elements
+- Can write custom directives
+- Serve as intermediary between model and the view (html)
+
+# view
+- HTML markup for that corresponding application
+
+# ng-model 
+- Fills the $scope model with the data gained from the HTML (html forms)
+    - Put this attribute in the “input” element
+- Binds data gained from HTML to the $scope
+
+# ng-click
+- Allows angular to find function that’s defined on the model
+
+# ng-repeat
+- Lets you loop through a list that the $scope variable has
+
+# filters
+- Allows you to pipe expression through a filter so that you can modify the data for when it’s displayed on the page
+
+# ng-show + ng-hide
+- This allows you to hide or show a segment of HTML code if the value of these attributes evaluates to truthy; they do the opposite when the value evaluates to falsey
+
+# ng-include
+- Brings in HTML from other sources
+<div ng-include=“‘other_html_file.html’”></div>
+
+
+# Services # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+# service
+- All the code that doesn’t fit in the model or view
+- Offer functionality to models and directives in a reusable way (DRY)
+- There are many built-in services but you can also write your own services
+
+# UI services
+- Services that are an intermediary between controller and view
+
+# custom services
+- Make it easier to see what it going on
+
+
+# Routing # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# what is routing?
+- How URL requests are routed to the code that handles them
+- Use $routeProvider

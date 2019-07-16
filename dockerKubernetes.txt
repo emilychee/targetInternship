@@ -1,0 +1,50 @@
+# Docker + Kubernetes #
+
+# OS-level virtualization
+- The practice in which the kernel allows many isolated applications to co-exist on the same hardware
+- These isolated spaces are called containers, virtual private servers, virtual environments, etc.
+- Programs running inside of a container can only see the container’s contents and devices that are assigned to that same container (in contrast to being able to see all resources being run on the OS)
+- Always need an operating system on top of the hardware level
+
+# What is a Container and why do we need them?
+- Back in the day, used to have one server per application
+    - This was a nuisance because had to pay more money to cool and power that server as well as set it up
+    - Nobody knew how big or fast they needed their server to be either (always just went on the safe side and bought the big and fast ones)
+    - This led to many overpowered servers running
+- VMWare
+    - Allows us to put multiple applications on a server by splitting up the hardware resources of the server
+    - VM: (virtual machine) essentially a slice of the server’s processing power (hardware: CPU, memory, physical disk space)
+    - VMs are made to feel like mini servers
+    - Each virtual machine also needs it own dedicated OS
+    - Disadvantages:
+        - OS takes up some of the VM resources just to run itself
+        - OS also takes licensing costs and needs sufficient security
+- Containers
+    - Installs one OS on top of the server
+    - On top of the OS, install one container for each application
+    - Each container is a slice of the OS instead of slice of the hardware
+    - Results in less wasted resources because only one OS to set up and take care of
+    - Makes it super easy to get an application running or tear an application down
+    - Docker lays on top of the OS (something you install on the machine) and it takes care of setting up containers for you
+        - You give your containers names
+        - Choose what port to expose the running applications on
+    - Faster, cheaper, and a better utilization of resources than virtual machines are
+
+# Docker
+- Docker, the company
+    - Start-up from the Bay Area
+- Docker, the technology
+    - Makes running apps inside containers super easy
+    - Open-source and free community edition
+- Kubernetes makes docker scalable; docker works with individual containers
+
+# Kubernetes: container-orchestration system (container manager)
+- Made by Google
+- Open-source
+- Looks at how many containers you’re running, which nodes to run them on, when to scale them up or down, updating the content without downtime, balances the load of the containers, takes care of failed nodes
+- Kubernetes is like the conductor of an orchestra
+- Allows everything to move seamlessly between clouds & on and off the cloud
+
+# Suitable Workloads
+- Can handle both stateless and stateful applications (better at stateless)
+- Docker & Kubernetes are both production and enterprise ready
