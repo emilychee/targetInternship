@@ -2,11 +2,14 @@
 
 (6/10)
 - Unit testing JavaScript using Jest
-    - Had to do npm test — to add path to jest (./node_modules/jest) to my path and now npm run test works
+    - Had to do npm test — to add path to jest (./node_modules/jest) to my 
+path and now npm run test works
     - Describe groups together several related tests
-    - beforeEach initializes variables, databases, other things that you need before you actually run the unit test
+    - beforeEach initializes variables, databases, other things that you need 
+before you actually run the unit test
     - It is an alias of test
-- Learned about Plunker (a good tool for learning AngularJS as well as JS, CSS and HTML)
+- Learned about Plunker (a good tool for learning AngularJS as well as JS, CSS
+ and HTML)
 - Learned to use node version manager (nvm)
     - Install <version>: install that version
     - List: lists all versions you have
@@ -14,10 +17,13 @@
 
 (6/11)
 - Wrote a Greetings bash script that outputs greeting in rainbow colors
-- Unit testing: learned how to assert that the type of the object that’s returned is what was expected
+- Unit testing: learned how to assert that the type of the object that’s 
+returned is what was expected
 - Finished JavaScript Basics Tutorial from tutorialspoint.com 
-- Started AngularJS tutorial on app.pluralsight.com: finished introduction and controllers
-    - made a controller (MainCtrl) and used it to make an API call to GitHub using the http service
+- Started AngularJS tutorial on app.pluralsight.com: finished introduction and
+ controllers
+    - made a controller (MainCtrl) and used it to make an API call to GitHub 
+using the http service
 
 (6/12)
 - Intern Bias Training
@@ -26,29 +32,35 @@
 (6/13)
 - started To Do List in javascript
 - AngularJS tutorial: finished Services and Routing (done with course)
-- Started side project called “target_project” to learn AngularJS (finished product will be a ToDo list application)
+- Started side project called “target_project” to learn AngularJS (finished 
+product will be a ToDo list application)
     - Made index.html and script.js
     - Resolved issue with javascript file not loading
 
 (6/14)
-- Finished first story (deleting a drop-down option from the ‘Add Product - Manually’ form)
+- Finished first story (deleting a drop-down option from the ‘Add Product - 
+Manually’ form)
 
 (6/17)
-- Working on second story & IntelliJ issues resolved (wouldn’t let me write to files)
+- Working on second story & IntelliJ issues resolved (wouldn’t let me write to
+ files)
 
 (6/18)
 - dynamically creating new list elements in AngularJS for to_do application
-- Looking through code base trying to figure out how users get authorized for negotiations
+- Looking through code base trying to figure out how users get authorized for 
+negotiations
 - Made bash script to automate running flask server for to_do project
 
 (6/19)
 - Made API call (assignUsers to that event) but problem still isn’t fixed
 - Figured out the rest of what I need to do: 
-    - when adding users to the plan, must automatically add them to the event (same with removing)
+    - when adding users to the plan, must automatically add them to the event 
+(same with removing)
 
 (6/20)
 - Finished to_do application (version 1)
-- Finished part of EA-9136: to have consistency between Share Plan and Negotiations page when showing who the plans are shared with
+- Finished part of EA-9136: to have consistency between Share Plan and 
+Negotiations page when showing who the plans are shared with
 
 (6/21)
 - Wrote out pseudocode for how to do the rest of EA-9136
@@ -61,12 +73,15 @@
 
 (6/26)
 - Made pull request for EA-9136
-- Started EA-9392: added checkboxes next to items on Deleted Items pop-up and a Select All option (doesn’t work yet)
+- Started EA-9392: added checkboxes next to items on Deleted Items pop-up and 
+a Select All option (doesn’t work yet)
 - Learned about Kaggle, a tool for learning data science and machine learning
 
 (6/27)
-- Made changes to PR for EA-9136: got rid of comments, commented out code, and improved some tests I wrote
-- EA-9392: moved copy item button and wrote code to disable trashing items until at least one item is selected
+- Made changes to PR for EA-9136: got rid of comments, commented out code, and
+ improved some tests I wrote
+- EA-9392: moved copy item button and wrote code to disable trashing items 
+until at least one item is selected
 
 (6/28)
 - Daily tester: testing all PR done stories
@@ -101,7 +116,8 @@
 (7/11)
 - Java tutorial: Class Inheritance
 - Working on EA-9646
-- Wrote a bash script, platform.sh, to see which branch all the repos are on and also pull from master for each repo
+- Wrote a bash script, platform.sh, to see which branch all the repos are on 
+and also pull from master for each repo
 
 (7/12)
 - Finished up EA-9646: wrote tests
@@ -113,3 +129,9 @@
 
 (7/16)
 - Finished plural sight course: Docker + Kubernetes Big Picture
+- Learned what Kubernetes is: a system for automatic application deployment, 
+scaling and management
+- Worked on new story: added check to see if it was appropriate to delete the 
+item at all + refactored code to make new function that releases DPCI if that 
+item has one + called that function to ensure that DPCIs are release when 
+trashing an item
