@@ -82,7 +82,8 @@ case $1 in
 		fi
 
 		echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<"
-		echo $2 | lolcat
+		echo -n $2 | lolcat
+		echo ":" | lolcat
 		git -C $2 commit -m "$3" | lolcat
 		echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 		;;
