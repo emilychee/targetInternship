@@ -83,7 +83,7 @@ case $1 in
 
 		echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 		echo $2 | lolcat
-		git -C $2 commit -m "$3"
+		git -C $2 commit -m "$3" | lolcat
 		echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 		;;
 
