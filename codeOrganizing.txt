@@ -1,0 +1,28 @@
+# Organizing Your Code #
+"Programs should be written for people to read…"
+
+# Four strategies
+- Component
+- Toolbox
+- Layer
+- Kind 
+
+# By Component
+- The package has a minimal interface in which it only exposes services that are truly needed
+- The code in the package only relates to the service being provided
+- Use SOLID principles
+- Packages with mutual dependencies shouldn’t be considered separate units of code because they can’t be understood in isolation of each other
+- Doing abstraction successfully leads to code that’s easy to understand, modify, test, and reuse
+
+# By Toolbox
+- Weaker because doesn’t require internal cohesion (cohesion: the degree to which elements inside a module belong together)
+- Use when each “tool” isn’t big enough to warrant its own unit even if all the tools are technically independent of each other
+
+# By Layer
+- The logical coupling across the layers is stronger than the logical coupling within the layers
+- Can often lead to lots of complexity because of the dependencies
+
+# By Kind
+- Reduces overly complex code by grouping the classes together by what kind they are
+- However, usually not a good way to go about things because it hides the problems of the complex code
+- Often hides the complexity when the complexity of the project hasn’t changed
