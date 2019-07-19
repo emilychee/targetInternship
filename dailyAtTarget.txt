@@ -140,3 +140,7 @@ trashing an item
 - Working on story: stepped through code and double-checked everything + 
 wrote a test (but now other test are failing)
 - Continued Java Fundamentals tutorial
+
+(7/18)
+- Continued Java tutorial
+- Learned code organization tips
