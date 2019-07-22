@@ -144,3 +144,7 @@ wrote a test (but now other test are failing)
 (7/18)
 - Continued Java tutorial
 - Learned code organization tips
+
+(7/19)
+- Continued Java tutorial
+- Finished story EA-9628: fixed failing test cases
