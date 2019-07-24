@@ -69,7 +69,9 @@ int[] array = new int[size];
 this(/*parameters here*/)
     - Must be first line in that constructor
 - Initialization blocks: blocks of code to initialize the class
-    - Best to use when you want to share this piece of code across many other constructors because the initialization block automatically runs similar to the field initializers
+    - Best to use when you want to share this piece of code across many other 
+constructors because the initialization block automatically runs similar to 
+the field initializers
 - Class initialization order
     - Field initialization first (lowest priority)
     - Initialization block second
@@ -81,14 +83,103 @@ this(/*parameters here*/)
 
 # Class Inheritance
 - Fields from derived hide the base class fields with the same name
-- Methods from derived class override methods from base class with same signature
+- Methods from derived class override methods from base class with same 
+signature
 - Super treats objects as if they’re an instance of the base class
-    - Useful when wanting to access base class members that have been overridden
+    - Useful when wanting to access base class members that have been 
+overridden
 - Final prevents inheriting the whole class and prevents overriding of methods
     - Put it in the base class declaration so that no one can inherit it
-    - When adding it to a method in the base class, this means you can’t override that method in the derived class
+    - When adding it to a method in the base class, this means you can’t 
+override that method in the derived class
 - Abstract requires inheriting or overriding
     - For methods, only provide signature
     - If you have an abstract method, the class must be marked as abstract
 - Constructors aren’t inherited
     - Must call into a base class constructor
+
+# Strings
+- Immutable objects
+- methods: Length, comparisons, formatting, etc
+- String equality: compares object references
+    -  to compare the characters in the string use .equals(); can be expensive
+    - .intern() ensures that two string with the same value will hold the same
+ reference (point to the same string object); use when you’re doing many 
+ string comparisons because cheaper then .equals()
+- Converting non-string types
+    - Can use .valueOf() to put the value of an integer, float, etc into a 
+string
+    - Implicit conversions: happen during print statements
+    - Explicit casting with .toString()
+    - If we want to print out custom data types, must implement the toString()
+ method in that class
+    - StringBuilder: is like a vector but only for holding characters; can use
+ toString() to extract the internal string
+
+# Primitive Wrapper Classes
+- Classes:
+    - Abstractions
+    - Allows fields and methods specific to that type
+    - Incurs overhead cost
+- Primitives:
+    - Efficient + lightweight
+    - Doesn’t have any special fields or methods
+- Primitive wrapper classes: provide the convenience of classes for the 
+primitive types; all start with capital letters
+- Use .equals() with wrapper classes
+
+# Final
+- Can use final during creation of an object so that it can’t be reset (set in
+ initializers)
+- Can use static final and use that variable as a constant (use to avoid magic
+ numbers)
+
+# Exceptions
+- Try: holds the code that should execute
+- Catch: holds the code that executes if something goes wrong
+- Finally: code for clean-up; executes for both try and catch
+- Must handle most specific exceptions first (and work way down from hierarchy)
+- You can create a custom exception type
+    - Usually just have a constructor that accepts some error string message
+- Usually better to use the existing exception types
+
+# What is a namespace?
+- It’s a way of grouping together similar items/functionality (grouping 
+classes, functions, fields, etc)
+- It can’t be created as an object; it’s more of a naming convention
+- It’s basically just an additional identifier to differentiate functions, 
+classes, variables that may be similar to ones in other libraries
+
+# Package
+- Package: a group of related data types (classes)
+- Declaring packages: use package keyword at the very beginning of the file 
+(first line)
+    - package <package_name>
+- Packages create namespaces
+- Compiler needs to know each package’s type
+    - Types in the current package don’t need to be qualified
+    - Types in java.lang package don’t need to be qualified
+    - Must use type imports for everything else (like #include in C++)
+- Can limit access to package content:
+    - Can apply to a type
+    - Can apply to type members too
+- Visibility levels
+    - none specified: Only within the package
+    - Public: can be used everywhere
+    - Private: only within the class
+    - Protected: only within class and its subclasses
+- Provide predictable software structure
+
+# Interface
+- Can be thought of as a contract for the class
+- Can use templates to implement many of these at once
+- Can declare using interface keyword
+- Can have methods and constants
+- Can be extended
+
+# Static Members
+- Members that aren’t associated with any individual instance (so all 
+instances access the same value)
+- Static members are stored separately of the class instance
+- Can do static imports so that you don’t have to use the class name every time
+- Can use static initialization blocks to initialize static member variables

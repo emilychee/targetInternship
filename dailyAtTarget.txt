@@ -148,3 +148,15 @@ wrote a test (but now other test are failing)
 (7/19)
 - Continued Java tutorial
 - Finished story EA-9628: fixed failing test cases
+
+(7/22)
+- Secure Code Warrior challenge
+- Java tutorial
+- Started EA-9760
+
+(7/23)
+- Finished Java Fundamentals tutorial
+- Continued working on story
+
+(7/24)
+- Finished story EA-9760 (compiling all errors into an excel spreadsheet)
