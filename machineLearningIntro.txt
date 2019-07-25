@@ -1,0 +1,35 @@
+# Machine Learning (kaggle.com) #
+
+# How Models Work (simple)
+- Divide the data into categories (make a decision tree)
+- Fit the model by capturing information about the data (averages, etc)
+- The nodes in the decision tree capture the different factors of the 
+situation/problem you’re trying to model
+    - More nodes —> more specific —> more likely to be an accurate model
+    - Leaf = point at which we make a decision in a decision tree
+
+Questions:
+* When should mean be used over median and vice versa?
+
+# Selecting Data for Modeling
+- Prediction target is the y variable
+- Choosing features
+    - Features are the columns of the data table
+    - Helps us predict the y variable
+
+# Model Validation
+- How good is your model?
+- Summarizing model quality: look at mean absolute error
+    - How far the model’s predicted values lie from the true values, on average
+- Best to use multiple samples when training your model
+
+# Underfitting and Overfitting
+- Overfitting = model matches the training data very well but doesn’t predict 
+well on real data
+- Underfitting = doesn’t capture the patterns; when predictions are far off 
+not only in the real data but also in the training data
+
+# Random Forests (another type of model)
+- Uses many decision trees instead of just one
+- Makes a prediction by averaging the predictions of each component tree
+- Usually works way better than single decision trees
