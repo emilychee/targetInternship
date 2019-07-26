@@ -160,3 +160,9 @@ wrote a test (but now other test are failing)
 
 (7/24)
 - Finished story EA-9760 (compiling all errors into an excel spreadsheet)
+
+(7/25)
+- Learned a little more about Kubernetes: learned what a cluster and a node are
+    - A cluster is a set of computers that work together and act as a single 
+system; each computer in the system is called a node
+- Started new story EA-9761: working on filter enhancement for ItemBp
