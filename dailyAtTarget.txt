@@ -166,3 +166,25 @@ wrote a test (but now other test are failing)
     - A cluster is a set of computers that work together and act as a single 
 system; each computer in the system is called a node
 - Started new story EA-9761: working on filter enhancement for ItemBp
+
+(7/26)
+- Worked on story: added request parameter; now blocked on finding the actual 
+unique attributes
+
+(7/29)
+- Finished story; now need to do testing
+
+(7/30)
+- Demo day @ TNC
+
+(7/31)
+- Fixed test cases
+- fixed bug in my story: was only doing database query for item and not itemBp
+- Test cases all passing
+
+(8/1)
+- Worked on demo day material
+- Wrote my self-review
+
+(8/2)
+- Created PR for EA-9761: itemBp filter enhancement
