@@ -38,7 +38,7 @@ product will be a ToDo list application)
     - Resolved issue with javascript file not loading
 
 (6/14)
-- Finished first story (deleting a drop-down option from the ‘Add Product - 
+- Finished story #1 (deleting a drop-down option from the ‘Add Product - 
 Manually’ form)
 
 (6/17)
@@ -59,28 +59,28 @@ negotiations
 
 (6/20)
 - Finished to_do application (version 1)
-- Finished part of EA-9136: to have consistency between Share Plan and 
+- Finished part of story #2: to have consistency between Share Plan and 
 Negotiations page when showing who the plans are shared with
 
 (6/21)
-- Wrote out pseudocode for how to do the rest of EA-9136
+- Wrote out pseudocode for how to do the rest of story #2
 
 (6/24)
-- Finished first story EA-9136
+- Finished story #2
 
 (6/25)
-- Writing tests to have 100% branch coverage for
+- Writing tests to have 100% branch coverage
 
 (6/26)
-- Made pull request for EA-9136
-- Started EA-9392: added checkboxes next to items on Deleted Items pop-up and 
+- Made pull request for story #2
+- Started story #3: added checkboxes next to items on Deleted Items pop-up and 
 a Select All option (doesn’t work yet)
 - Learned about Kaggle, a tool for learning data science and machine learning
 
 (6/27)
-- Made changes to PR for EA-9136: got rid of comments, commented out code, and
+- Made changes to PR for story #2: got rid of comments, commented out code, and
  improved some tests I wrote
-- EA-9392: moved copy item button and wrote code to disable trashing items 
+- story #3: moved copy item button and wrote code to disable trashing items 
 until at least one item is selected
 
 (6/28)
@@ -92,12 +92,12 @@ until at least one item is selected
 
 (7/2)
 - Got Select All feature working correctly
-- Finished EA-9392
+- Finished story #3
 - Wrote tests for branch coverage
-- Submitted pull request for EA-9392
+- Submitted pull request for story #3
 
 (7/3)
-- Made fixes to EA-9392
+- Made fixes to PR for story #3
 - Started plural sight Spring Boot Overview tutorial
 
 (7/8)
@@ -107,24 +107,24 @@ until at least one item is selected
 (7/9)
 - Platform overview of architecture
 - Started Java tutorial
-- Started first platform story
+- Started first platform story, story #4: add attributes to the mongoDB schema
 
 (7/10)
-- Continued working on EA-9646
+- Continued working on story #4: added the attributes into certain files and added getters + setters for them
 - Continued Java tutorial
 
 (7/11)
 - Java tutorial: Class Inheritance
-- Working on EA-9646
+- Working on story #4: added the logic for setting the value of the database attributes
 - Wrote a bash script, platform.sh, to see which branch all the repos are on 
 and also pull from master for each repo
 
 (7/12)
-- Finished up EA-9646: wrote tests
+- Finished up story #4: wrote tests
 - Added more options to bash (status + add)
 
 (7/15)
-- Started a new story: EA-9628
+- Started story #5: fixing how delete works on the backend of the application
 - Added more options and argument checking to bash script (commit + push)
 
 (7/16)
@@ -137,7 +137,7 @@ item has one + called that function to ensure that DPCIs are release when
 trashing an item
 
 (7/17)
-- Working on story: stepped through code and double-checked everything + 
+- Working on story #5: stepped through code and double-checked everything + 
 wrote a test (but now other test are failing)
 - Continued Java Fundamentals tutorial
 
@@ -147,39 +147,39 @@ wrote a test (but now other test are failing)
 
 (7/19)
 - Continued Java tutorial
-- Finished story EA-9628: fixed failing test cases
+- Finished story story #5: fixed failing test cases
 
 (7/22)
 - Secure Code Warrior challenge
 - Java tutorial
-- Started EA-9760
+- Started story #6
 
 (7/23)
 - Finished Java Fundamentals tutorial
 - Continued working on story
 
 (7/24)
-- Finished story EA-9760 (compiling all errors into an excel spreadsheet)
+- Finished story #6: compiling all errors into an excel spreadsheet
 
 (7/25)
 - Learned a little more about Kubernetes: learned what a cluster and a node are
     - A cluster is a set of computers that work together and act as a single 
 system; each computer in the system is called a node
-- Started new story EA-9761: working on filter enhancement for ItemBp
+- Started story #7: working on filter enhancement for negotiation page
 
 (7/26)
-- Worked on story: added request parameter; now blocked on finding the actual 
+- Worked on story #7: added request parameter; now blocked on finding the actual 
 unique attributes
 
 (7/29)
-- Finished story; now need to do testing
+- Finished story #7: modified the endpoint, specifically the number of parameters it takes
 
 (7/30)
 - Demo day @ TNC
 
 (7/31)
 - Fixed test cases
-- fixed bug in my story: was only doing database query for item and not itemBp
+- fixed bug in story #7: was only doing database query for item and not itemBp
 - Test cases all passing
 
 (8/1)
@@ -187,7 +187,7 @@ unique attributes
 - Wrote my self-review
 
 (8/2)
-- Created PR for EA-9761: itemBp filter enhancement
+- Created PR for story #7: itemBp filter enhancement
 
 (8/5)
 - begINNER con: short presentations about different topics (technical and 
