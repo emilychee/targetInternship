@@ -188,3 +188,13 @@ unique attributes
 
 (8/2)
 - Created PR for EA-9761: itemBp filter enhancement
+
+(8/5)
+- begINNER con: short presentations about different topics (technical and 
+non-technical)
+
+(8/6)
+- Demo day for me
+
+(8/7)
+- Went to TNC to see demo day for north campus interns
