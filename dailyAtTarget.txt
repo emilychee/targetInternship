@@ -198,3 +198,9 @@ non-technical)
 
 (8/7)
 - Went to TNC to see demo day for north campus interns
+
+(8/8)
+- Fixed PR for story #7
+
+(8/9)
+- Learned about Apache Kafka
